@@ -1,0 +1,18 @@
+@charset "UFT-8";
+
+
+body{
+    background-color: blanchedalmond;
+    background-image: url('pexels-pixabay-2166.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    color: rgba(10, 122, 122, 0.644);
+    background-color: rgba(0, 0, 0, 0.432);
+}
+li{
+    color: rgba(255, 35, 6, 0.603);
+    font-size: 20px;
+}
