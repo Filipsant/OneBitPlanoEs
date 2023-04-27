@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.icone{
+    width: 50px;
+}
+
+.logo{
+    width: 200px;
+}
+
+.botoes{
+    display: flex;
+    gap: 15px;
+}
+
+.botao{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.botao:hover{
+ color: #ff0044;
+}
+
+
+
