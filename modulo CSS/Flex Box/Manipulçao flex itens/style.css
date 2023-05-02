@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: darkgray;
+    min-height: 100vh;
+    display: flex;
+    gap: 0px 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    /*flex-wrap: wrap;*/
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: white;
+    font-size: 25px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+.item1{
+  order:2;
+  align-self: center;
+}
+
+.item2{
+  order: 3;
+}
+
+.item3{
+  order: 1;
+}
