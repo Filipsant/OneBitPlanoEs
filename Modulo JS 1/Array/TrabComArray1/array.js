@@ -21,7 +21,7 @@ let ultimoElemto = arr.pop()
 console.log(arr)
 console.log(ultimoElemto)
 
-//shift(remove o elemento no final da array)
+//shift(remove o elemento no começo da array)
 
 ultimoElemto = arr.shift()
 console.log(arr)
