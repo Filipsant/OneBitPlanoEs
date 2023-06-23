@@ -6,7 +6,21 @@ class Account {
     this.#password = user.password
     this.#balance = 0
    }
+
+   getBalance(email, password){
+    if(this.#authenticate(email, password)){
+        return this.#balance
+    }else{
+        return null
+    }
+   }
+
+   #authenticate(email,password){
+    return this.email === email && this.#password === password
+   }
 }
+
+
 
 const user ={
     email: "filipe@email.com",
@@ -16,7 +30,6 @@ const user ={
 const myAccount = new Account(user)
 
 console.log(myAccount)
+console.log(myAccount.getBalance("filipe@email.com", "1234"))
 
-myAccount.password = "12345"
-myAccount.balance = 99999
 
