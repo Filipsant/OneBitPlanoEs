@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        body{
+            background-color: #7513b6;
+            color: white;
+            font-size: 44px;
+        }
+        .container{
+            min-height: 100vh;
+        }
+    </style>
+    <title>Animação de texto</title>
+</head>
+<body>
+    <div data-aos="fade-down" class="container"  data-aos-duration="3000">
+        
+        <p>Hello, Word!</p>
+    </div>
+    <div data-aos="zoom-in-down"  data-aos-duration="3000" class="container">
+        <p>Hello, Word!</p>
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
