@@ -1,6 +1,7 @@
 import StatusText from "./components/StatusText"
 import { Subtitle } from "./components/Subtitle"
 import Title from "./components/Title"
+import styles from "./App.module.css"
 
 
 // Dados dinamicos 
@@ -22,17 +23,11 @@ import Title from "./components/Title"
 
 
 export default function App(){
-  const tech = "React"
-  
   return(
-    <div>
+    <div className={styles.app}>
       <Title/>
       <Subtitle />
       <StatusText/>
-      
-    
-    
-   
     </div>
   )
 }
