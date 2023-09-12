@@ -7,10 +7,11 @@ function getInitialValue(){
 }
 
 export default function useCounter(){
-    const [count, setCount] = useState(getInitialValue)
+    const [count, setCount] = useState(()=> getInitialValue())
     
     const increment = ()=>{
-        setCount(count + 1)
+        setCount((currentState) => currentState + 1)
+        setCount((currentState)=> currentState + 1)
     }
 
     return{count, increment}
