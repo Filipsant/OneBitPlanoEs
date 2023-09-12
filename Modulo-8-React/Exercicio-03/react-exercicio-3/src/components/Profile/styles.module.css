@@ -21,4 +21,7 @@
     gap: 1rem;
     align-items: center;
   }
- 
+ .followButton{
+  margin-left: 16px;
+  padding: .125rem, .5rem;
+ }
