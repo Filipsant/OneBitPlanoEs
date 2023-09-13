@@ -12,10 +12,10 @@ import useCounter from './hooks/useCounter'
 function App() {
 
   const counter = useCounter()
- 
+
   return (
     <>
-      
+
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={counter.increment}>
@@ -25,7 +25,7 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-     
+
     </>
   )
 }
