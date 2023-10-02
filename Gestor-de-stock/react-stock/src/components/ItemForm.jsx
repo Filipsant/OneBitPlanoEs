@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import StockItem, { CATEGORIES } from "../entities/StockItem"
 import useStock from "../hooks/useStock"
 
+
 ItemForm.propTypes = {
     itemToUpdate: PropTypes.object
 }
@@ -19,7 +20,7 @@ export default function ItemForm({itemToUpdate}){
     }
 
     const [item, setItem] = useState(itemToUpdate ? itemToUpdate: defaultItem)
-    const {addItem} = useStock()
+    const {addItem, updateItem} = useStock()
     const inputRef = useRef(null)
 
     const handleChange = (ev) => {
@@ -35,13 +36,21 @@ export default function ItemForm({itemToUpdate}){
       ev.preventDefault()
 
       try{
-        const validitem = new StockItem(item)
-        addItem(validitem)
-        setItem(defaultItem)
-        alert('item cadastrado com sucesso!')
-        inputRef.current.focus
+        if(itemToUpdate){
+         updateItem(itemToUpdate.id, item)
+         alert("Item Atualizado com sucesso!")
+        }else{
+          const validitem = new StockItem(item)
+          addItem(validitem)
+          setItem(defaultItem)
+          alert('item cadastrado com sucesso!')
+          inputRef.current.focus
+          
+        }
       }catch(err){
         console.log(err.massage)
+      }finally{
+        inputRef.current.focus
       }
     }
     
