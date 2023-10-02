@@ -30,6 +30,10 @@ export function StockContextProvider({children}){
 
         
     }
+    
+    const getItem = (itemId)=>{
+      return itens.find(item => item.id === +itemId)
+    }
 
     const deleteItem = (itemId) =>{
         setItens(currentState => {
@@ -41,6 +45,7 @@ export function StockContextProvider({children}){
     const stock = {
         itens,
         addItem,
+        getItem,
         deleteItem
        
     }
