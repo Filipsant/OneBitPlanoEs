@@ -12,10 +12,10 @@ export function StockContextProvider({children}){
      const storedItens = localStorage.getItem('obc-react-stock')
      if(!storedItens) return[]
      const itens = JSON.parse(storedItens)
-    itens.forEach((item)=>{
-       item.createdAt = new Date(item.createdAt)
-       item.updatdeAt = new Date(item.updatedAt) 
-    })  
+     itens.forEach((item) => {
+        item.createdAt = new Date(item.createdAt)
+        item.updatedAt = new Date(item.updatedAt)
+     })
      return itens
    })
     
@@ -39,7 +39,7 @@ export function StockContextProvider({children}){
     
     return(
         <StockContext.Provider value={stock}>
-            {children}
+           {children} 
         </StockContext.Provider>
     )
 }
