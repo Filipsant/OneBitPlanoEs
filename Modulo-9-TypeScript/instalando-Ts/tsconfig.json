@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
-        "outFile": "main.js"
+        "outFile": "main.js",
+        "target": "ESNext"
     }
 }
